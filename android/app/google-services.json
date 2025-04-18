@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "714785689884",
+    "project_id": "flutterplaygroundbookingapp",
+    "storage_bucket": "flutterplaygroundbookingapp.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:714785689884:android:c7fdaf90dbdce30b226ad9",
+        "android_client_info": {
+          "package_name": "com.example.flutter_playground_booking_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "714785689884-t5h58t6s711657ru1aq2ur31nlvumj0e.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.flutter_playground_booking_app",
+            "certificate_hash": "8ff1bcd615e88215e506a0e0d9b1b86867fd6840"
+          }
+        },
+        {
+          "client_id": "714785689884-l347cumjq95dk6lnog96ve7ulhpdpab6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyARVYL8pgLG6XsAC7EJzsZ0EXxfvik0UZ0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "714785689884-l347cumjq95dk6lnog96ve7ulhpdpab6.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "714785689884-jrur38p6l8o977m5fuqubnel49kr9uec.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.flutterPlaygroundBookingApp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

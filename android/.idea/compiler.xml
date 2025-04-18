@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel target="21">
+      <module name="android.sqflite" target="21" />
+      <module name="com.jaumard.smsautofill.android.sms_autofill" target="21" />
+      <module name="io.flutter.plugins.imagepicker.android.image_picker_android" target="21" />
+      <module name="io.flutter.plugins.pathprovider.android.path_provider_android" target="21" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
