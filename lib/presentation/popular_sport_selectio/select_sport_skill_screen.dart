@@ -54,7 +54,6 @@ class _SkillLevelPageState extends State<SkillLevelPage> {
       appBar: AppBar(
         elevation: 0,
         backgroundColor: Colors.transparent,
-        leading: const Icon(Icons.arrow_back, color: Colors.black),
         title: const Text(
           'How good are you at these',
           style: TextStyle(color: Colors.black, fontWeight: FontWeight.w600),

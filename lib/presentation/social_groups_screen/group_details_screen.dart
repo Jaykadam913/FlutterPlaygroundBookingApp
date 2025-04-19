@@ -30,7 +30,7 @@ class GroupDetailsScreen extends StatelessWidget {
                 ),
                 CircleAvatar(
                   radius: 36,
-                  backgroundImage: AssetImage("assets/group_avatar.jpg"),
+                  backgroundImage: AssetImage("assets/images/badminton.jpg"),
                 ),
                 SizedBox(height: 12),
                 Text(

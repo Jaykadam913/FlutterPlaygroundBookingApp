@@ -78,21 +78,25 @@ class _ProfileSetupPageState extends State<ProfileSetupPage> {
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         elevation: 0,
-        leading: const Icon(Icons.arrow_back, color: Colors.black),
         title: const Text(
           "Tell us more about you",
           style: TextStyle(color: Colors.black, fontWeight: FontWeight.w700),
         ),
-        actions: const [
-          Padding(
-            padding: EdgeInsets.only(right: 16.0),
-            child: Center(
-              child: Text(
-                'Skip',
-                style: TextStyle(
-                    fontSize: 16,
-                    color: Colors.teal,
-                    fontWeight: FontWeight.w500),
+        actions: [
+          GestureDetector(
+            onTap: () {
+              Navigator.pushNamed(context, AppRoutes.youAllSetScreen);
+            },
+            child: Padding(
+              padding: EdgeInsets.only(right: 16.0),
+              child: Center(
+                child: Text(
+                  'Skip',
+                  style: TextStyle(
+                      fontSize: 16,
+                      color: Colors.teal,
+                      fontWeight: FontWeight.w500),
+                ),
               ),
             ),
           )
@@ -126,13 +130,16 @@ class _ProfileSetupPageState extends State<ProfileSetupPage> {
             const SizedBox(height: 10),
             Text(selectedGender, style: const TextStyle(fontSize: 16)),
             const SizedBox(height: 20),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                genderButton("Male"),
-                const SizedBox(width: 10),
-                genderButton("Female"),
-              ],
+            Container(
+              margin: EdgeInsets.symmetric(horizontal: 30),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  genderButton("Male"),
+                  const SizedBox(width: 10),
+                  genderButton("Female"),
+                ],
+              ),
             ),
             const SizedBox(height: 30),
             GestureDetector(
@@ -144,11 +151,15 @@ class _ProfileSetupPageState extends State<ProfileSetupPage> {
                 children: [
                   Icon(Icons.location_on, size: 20),
                   SizedBox(width: 5),
-                  Text("Change your location", style: TextStyle(fontSize: 14)),
+                  Text("Change your location",
+                      style: TextStyle(
+                          color: Colors.black,
+                          fontWeight: FontWeight.w600,
+                          fontSize: 14)),
                 ],
               ),
             ),
-            const SizedBox(height: 10),
+            const SizedBox(height: 30),
             Container(
               padding: const EdgeInsets.symmetric(vertical: 14),
               width: double.infinity,
@@ -190,20 +201,23 @@ class _ProfileSetupPageState extends State<ProfileSetupPage> {
 
   Widget genderButton(String gender) {
     final isSelected = selectedGender == gender;
-    return GestureDetector(
-      onTap: () => setState(() => selectedGender = gender),
-      child: Container(
-        padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 18),
-        decoration: BoxDecoration(
-          color: isSelected ? Colors.teal : Colors.white,
-          borderRadius: BorderRadius.circular(10),
-          border: Border.all(color: Colors.teal),
-        ),
-        child: Text(
-          gender,
-          style: TextStyle(
-            color: isSelected ? Colors.white : Colors.black,
-            fontWeight: FontWeight.w500,
+    return Expanded(
+      child: GestureDetector(
+        onTap: () => setState(() => selectedGender = gender),
+        child: Container(
+          padding: const EdgeInsets.symmetric(vertical: 15, horizontal: 18),
+          decoration: BoxDecoration(
+            color: isSelected ? Colors.teal : Colors.white,
+            borderRadius: BorderRadius.circular(10),
+            border: Border.all(color: Colors.teal),
+          ),
+          child: Text(
+            gender,
+            textAlign: TextAlign.center,
+            style: TextStyle(
+                color: isSelected ? Colors.white : Colors.black,
+                fontWeight: FontWeight.w500,
+                fontSize: 20),
           ),
         ),
       ),

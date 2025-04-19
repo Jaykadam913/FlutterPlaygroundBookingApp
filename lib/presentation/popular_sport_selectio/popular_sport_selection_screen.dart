@@ -23,7 +23,6 @@ class SportsSelectionScreen extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         elevation: 0,
-        leading: const BackButton(color: Colors.black),
         title: const Text(
           'What Sports do you play?',
           style: TextStyle(color: Colors.black, fontWeight: FontWeight.w700),

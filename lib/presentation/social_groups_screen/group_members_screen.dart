@@ -16,8 +16,6 @@ class GroupMembersPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text('57 Members', style: TextStyle(color: Colors.black)),
-        leading: Icon(Icons.arrow_back, color: Colors.black),
-        backgroundColor: Colors.white,
         elevation: 0,
       ),
       body: Column(

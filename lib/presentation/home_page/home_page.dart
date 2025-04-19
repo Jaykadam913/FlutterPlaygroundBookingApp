@@ -55,18 +55,13 @@ class _HomePageState extends State<HomePage> {
                 Get.to(GroupsPage());
               },
               child: Card(
-                child: Row(
-                  children: [
-                    CircleAvatar(
-                      child: Icon(Icons.groups_2_outlined),
-                    ),
-                    Column(
-                      children: [
-                        Text('Groups'),
-                        Text('Connect, Compete and Discuss')
-                      ],
-                    ),
-                  ],
+                margin: EdgeInsets.only(left: 20, right: 20, bottom: 20),
+                child: ListTile(
+                  leading: CircleAvatar(
+                    child: Icon(Icons.groups_2_outlined),
+                  ),
+                  title: Text('Groups'),
+                  subtitle: Text('Connect, Compete and Discuss'),
                 ),
               ),
             ),
